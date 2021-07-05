@@ -1,0 +1,25 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "moduleResolution": "Node",
+    "target": "ES5",
+    "lib": ["es2018", "DOM", "DOM.Iterable"],
+    "module": "CommonJS",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "incremental": true,
+    "baseUrl": "./",
+    "rootDir": "./src",
+    "paths": {
+      "@root/*": ["./src/*"],
+    }
+  },
+  "include": [
+    "src/",
+  ]
+}
